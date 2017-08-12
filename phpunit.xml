@@ -1,2 +1,2 @@
-<phpunit bootstrap="src/Autoload.php">
+<phpunit bootstrap="vendor/autoload.php">
 </phpunit>
