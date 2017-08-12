@@ -18,4 +18,22 @@ class GomaUnitTestTest extends GomaUnitTest
             throw new LogicException("Stup!");
         }, LogicException::class);
     }
+
+    /**
+     * Assert null.
+     */
+    public function testAssertNull() {
+        $this->assertNull(null);
+    }
+
+    /**
+     * Assert null.
+     */
+    public function testAssertNullFail() {
+        try {
+            $this->assertNull(null);
+        } catch (Exception $e) {
+            $this->assertInstanceOf(Exception::class, $e);
+        }
+    }
 }
