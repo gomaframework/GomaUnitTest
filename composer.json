@@ -1,5 +1,5 @@
 {
-    "name": "Goma/GomaTestCore",
+    "name": "goma/goma-test-core",
     "description": "GomaUnitTest is a wrapper class to support PHP 5 and PHP 7 for tests. In addition it gives some helper asserts.",
     "authors": [
         {
