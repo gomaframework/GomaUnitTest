@@ -35,8 +35,7 @@ class GomaUnitTestTest extends GomaUnitTest
 
             $this->fail("Fail.");
         } catch (Exception $e) {
-            get_class($e);
-            $this->assertInstanceOf(AssertionError::class, $e);
+            $this->assertInstanceOf(Exception::class, $e);
         }
     }
 }
