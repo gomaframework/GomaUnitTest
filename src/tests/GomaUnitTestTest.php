@@ -20,6 +20,21 @@ class GomaUnitTestTest extends GomaUnitTest
     }
 
     /**
+     * Tests assertThrows method when exception is not thrown.
+     */
+    public function testAssertThrowsFalse() {
+        try {
+            $this->assertThrows(function () {
+                $i = 1;
+            }, LogicException::class);
+
+            $this->fail("Fail!");
+        } catch (Exception $e) {
+            $this->assertInstanceOf(Exception::class, $e);
+        }
+    }
+
+    /**
      * Assert null.
      */
     public function testAssertNull() {
@@ -27,7 +42,7 @@ class GomaUnitTestTest extends GomaUnitTest
     }
 
     /**
-     * Assert null.
+     * Assert null if null is not null.
      */
     public function testAssertNullFail() {
         try {
