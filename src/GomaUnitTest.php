@@ -44,6 +44,9 @@ abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase {
         }
     }
 
+    /**
+     * alias to assertEquals.
+     */
 	public function assertEqual() {
 		call_user_func_array(array($this, "assertEquals"), func_get_args());
 	}
