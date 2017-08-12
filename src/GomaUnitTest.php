@@ -21,7 +21,7 @@ if(class_exists( PHPUnit_Framework_TestCase::class)) {
  * @method void assertNotInstanceOf($class, $object, $message = null)
  * @method void assertNotNull($object, $message = null)
  */
-abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase implements TestAble {
+abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase {
 
     /**
      * assert for exceptions.
