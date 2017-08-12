@@ -10,6 +10,7 @@ if(class_exists( PHPUnit_Framework_TestCase::class)) {
  *
  * @author		Goma-Team
  * @license		GNU Lesser General Public License, version 3; see "LICENSE.txt"
+ * @copyright		Goma-Team
  *
  * @method void assertNull($actual, $message = null)
  * @method void assertTrue($actual, $message = null)

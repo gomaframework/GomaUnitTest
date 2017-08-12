@@ -6,7 +6,7 @@
  * @package goma/goma-test-core
  * @author		Goma-Team
  * @license		GNU Lesser General Public License, version 3; see "LICENSE.txt"
- * @copyright Ingenieurbüro Peter Gruber
+ * @copyright Goma-Team
  */
 class GomaUnitTestTest extends GomaUnitTest
 {
