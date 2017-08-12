@@ -7,6 +7,7 @@
             "email": "team@goma-cms.org"
         }
     ],
+    "license": "LGPL-3.0",
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.0"
