@@ -31,9 +31,11 @@ class GomaUnitTestTest extends GomaUnitTest
      */
     public function testAssertNullFail() {
         try {
-            $this->assertNull(null);
+            $this->assertNull(true);
+
+            $this->fail("Fail.");
         } catch (Exception $e) {
-            $this->assertInstanceOf(Exception::class, $e);
+            $this->assertInstanceOf(AssertionError::class, $e);
         }
     }
 }
