@@ -53,4 +53,11 @@ class GomaUnitTestTest extends GomaUnitTest
             $this->assertInstanceOf(Exception::class, $e);
         }
     }
+
+    /**
+     * Tests valid code.
+     */
+    public function testValidateCode() {
+        $this->assertSyntax('<?php $a = 1 + 1;');
+    }
 }
