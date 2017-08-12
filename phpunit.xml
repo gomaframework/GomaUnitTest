@@ -1,2 +1,2 @@
-<phpunit bootstrap="src/GomaUnitTest.php">
+<phpunit bootstrap="src/Autoload.php">
 </phpunit>
