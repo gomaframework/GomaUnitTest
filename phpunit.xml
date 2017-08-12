@@ -1,0 +1,2 @@
+<phpunit bootstrap="src/GomaUnitTest.php">
+</phpunit>

@@ -6,7 +6,7 @@ if(class_exists( PHPUnit_Framework_TestCase::class)) {
 /**
  * Base-Class for all Goma Unit-Tests.
  *
- * @package		Goma\Test
+ * @package		goma/goma-test-core
  *
  * @author		Goma-Team
  * @license		GNU Lesser General Public License, version 3; see "LICENSE.txt"
