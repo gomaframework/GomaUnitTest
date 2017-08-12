@@ -35,7 +35,7 @@ class GomaUnitTestTest extends GomaUnitTest
     }
 
     /**
-     * Assert null.
+     * Assert null test for null.
      */
     public function testAssertNull() {
         $this->assertNull(null);
