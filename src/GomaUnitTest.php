@@ -70,16 +70,16 @@ abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase {
 		call_user_func_array(array($this, "assertRegExp"), func_get_args());
 	}
 
-	public function assertNoPattern($pattern, $str, $msg = null) {
+	public function assertNoPattern($pattern, $str, $msg = '') {
 		$this->assertFalse(!!preg_match($pattern, $str), $msg);
 	}
 
-	public function assertWithinMargin($info, $expected, $margin, $msg = null) {
+	public function assertWithinMargin($info, $expected, $margin, $msg = '') {
 		$this->assertLessThanOrEqual($expected + $margin, $info, $msg);
 		$this->assertGreaterThanOrEqual($expected - $margin, $info, $msg);
 	}
 
-	public function assertNotA($obj, $class, $msg = null) {
+	public function assertNotA($obj, $class, $msg = '') {
 		if($class == "array") {
 			$this->assertFalse(is_array($obj));
 		} else if($class == "string") {
@@ -91,7 +91,7 @@ abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase {
 		}
 	}
 
-	public function assertIsA($obj, $class, $msg = null) {
+	public function assertIsA($obj, $class, $msg = '') {
 		if($class == "array") {
 			$this->assertTrue(is_array($obj));
 		} else if($class == "string") {
