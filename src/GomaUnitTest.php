@@ -133,7 +133,7 @@ abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase {
         }
         $s = "";
         for($i = 0; $i < $length; $i++) {
-            $s .= $possible{mt_rand(0, strlen($possible) - 1)};
+            $s .= $possible[mt_rand(0, strlen($possible) - 1)];
         }
         return $s;
     }
