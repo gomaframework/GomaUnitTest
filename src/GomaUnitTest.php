@@ -150,7 +150,7 @@ abstract class GomaUnitTest extends \PHPUnit\Framework\TestCase {
     /**
      * memory leak improvement
      */
-    public function tearDown()
+    protected function tearDown()
     {
         $refl = new ReflectionObject($this);
         foreach ($refl->getProperties() as $prop) {
